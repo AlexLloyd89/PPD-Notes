@@ -78,11 +78,11 @@ button{
   left: 20%;
 }
 
-#droppable{
+.dropzone{
   width: 100%;
   height: 730px;
   background-color: white;
-  overflow: auto;
+  overflow: hidden;
 }
 
 
