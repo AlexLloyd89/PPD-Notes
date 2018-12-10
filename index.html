@@ -7,25 +7,37 @@
     <title>PPD | Notes</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700" rel="stylesheet">
   </head>
   <body>
-
-    <div id="postIt">
-      <div id='the-note'>
-      <div class=topBar></div>
-      <div class=form>
-        <div contenteditable class=textAria>
-        Enter Your Text Here...
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="footer"><button type="button">Generate New Note</button></div>
+  <div class="header">PPD | Notes</div>
+  <!--Post It Note Drop Area-->
+<div id="droppable">
+<!--Footer & PostIt Genesis-->
+    <div class="footer">
+      <div id="hold-me">
+        <div class="postIt">
+            <div id='the-note'>
+            <div class=topBar></div>
+            <div class=form>
+              <div contenteditable class=textAria>
+              You might have to right click on my in order to write new text for now. 
+              </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          <!-- <button type="button">Generate New Note</button></div> -->
+<!--Jquery & Jquery UIs-->    
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
    
     <script src="script.js"></script>
   </body>
