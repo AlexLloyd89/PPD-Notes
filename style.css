@@ -72,12 +72,16 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-button{
+#clone-note{
   position: absolute;
   bottom: 50%;
   left: 20%;
 }
-
+#theme{
+  position: absolute;
+  bottom: 50%;
+  right: 20%;
+}
 .dropzone{
   width: 100%;
   height: 730px;

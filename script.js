@@ -1,4 +1,5 @@
-$('button').on('click', function(){
+//Clones note into target area, adds the draggable class to it
+$('#clone-note').on('click', function(){
  var newNote = $('.postIt').clone().attr('class', 'draggable');
  $('.dropzone').append(newNote)
 
@@ -10,7 +11,7 @@ interact('.draggable')
     // enable inertial throwing
     inertia: true,
     
-    // keep the element within the area of it's parent
+
 
     // enable autoScroll
     autoScroll: true,
@@ -54,46 +55,14 @@ interact('.draggable')
     // Require a 75% element overlap for a drop to be possible
     overlap: 0.75,
   
-    
-  
-//     ondropactivate: function (event) {
-//       // add active dropzone feedback
-//       event.target.classList.add('drop-active');
-//     },
-//     ondragenter: function (event) {
-//       var draggableElement = event.relatedTarget,
-//           dropzoneElement = event.target;
-  
-//       // feedback the possibility of a drop
-//       dropzoneElement.classList.add('drop-target');
-//       draggableElement.classList.add('can-drop');
-//       draggableElement.textContent = 'Dragged in';
-//     },
-//     ondragleave: function (event) {
-//       // remove the drop feedback style
-//       event.target.classList.remove('drop-target');
-//       event.relatedTarget.classList.remove('can-drop');
-//       event.relatedTarget.textContent = 'Dragged out';
-//     },
-//     ondrop: function (event) {
-//       event.relatedTarget.textContent = 'Dropped';
-//     },
-//     ondropdeactivate: function (event) {
-//       // remove active dropzone feedback
-//       event.target.classList.remove('drop-active');
-//       event.target.classList.remove('drop-target');
-//     }
-//   });
-  
-//   interact('.drag-drop')
-//     .draggable({
-//       inertia: true,
-//       restrict: {
-//         restriction: "parent",
-//         endOnly: true,
-//         elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
-//       },
-//       autoScroll: true,
-//       // dragMoveListener from the dragging demo above
-//       onmove: dragMoveListener,
+
    });
+
+   //Theme options? 
+ $('#theme').on('click', function(){
+   $('body').css('background-color', 'rgb(58, 53, 53)');
+   $('.dropzone').css('background-color', 'rgb(58, 53, 53)');
+   $('.header').css('color', 'white');
+   $('.header').css('text-shadow', '1px 1px 1px #390d74');
+
+ })
